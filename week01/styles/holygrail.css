@@ -10,11 +10,10 @@ body {
     grid-column: 1 / 4;
   }
   
-  nav {
-    background: lightgreen; /* Example background color */
-    padding: 2rem; /* Example padding */
-    grid-column: 1 / 4; /* Span the entire width of the layout */
- }
+  .left-sidebar {
+    background: lightblue;
+    grid-column: 1 / 2;
+  }
   
   main {
     background: coral;
