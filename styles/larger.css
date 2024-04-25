@@ -1,0 +1,36 @@
+/* larger.css */
+
+@media (min-width: 768px) {
+    
+    nav ul {
+      flex-direction: row; /* Display navigation links horizontally */
+    }
+  
+    nav ul li {
+      margin: 0 10px;
+    }
+  
+    nav ul li a {
+      padding: 10px 20px;
+    }
+  
+    header img {
+      width: 50px; /* Decrease image size for larger views */
+    }
+  
+    header span {
+      font-size: 1.8rem; /* Increase font size for larger views */
+    }
+  
+    main {
+      max-width: 900px; /* Increase maximum width for main content */
+      margin: 0 auto; /* Center main content horizontally */
+    }
+  
+    .card {
+      display: grid; /* Use CSS Grid layout for cards in larger views */
+      grid-template-columns: repeat(2, 1fr); /* Display cards in two columns */
+      gap: 20px; /* Add gap between cards */
+    }
+  }
+  
