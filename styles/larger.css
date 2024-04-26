@@ -1,5 +1,10 @@
 @media (min-width: 768px) {
-    
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Display cards in two columns */
+    gap: 20px;
+  }
+
   nav ul {
     flex-direction: row; /* Display navigation links horizontally */
   }
@@ -26,10 +31,6 @@
   }
 
   .card {
-    display: flex; /* Change display to flex */
-    flex-direction: column; /* Stack cards vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
     background-color: #007872; /* Apply background color */
     border-radius: 5px;
     padding: 20px;
