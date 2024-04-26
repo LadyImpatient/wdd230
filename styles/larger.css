@@ -1,36 +1,49 @@
-/* larger.css */
-
 @media (min-width: 768px) {
     
-    nav ul {
-      flex-direction: row; /* Display navigation links horizontally */
-    }
-  
-    nav ul li {
-      margin: 0 10px;
-    }
-  
-    nav ul li a {
-      padding: 10px 20px;
-    }
-  
-    header img {
-      width: 50px; /* Decrease image size for larger views */
-    }
-  
-    header span {
-      font-size: 1.8rem; /* Increase font size for larger views */
-    }
-  
-    main {
-      max-width: 900px; /* Increase maximum width for main content */
-      margin: 0 auto; /* Center main content horizontally */
-    }
-  
-    .card {
-      display: grid; /* Use CSS Grid layout for cards in larger views */
-      grid-template-columns: repeat(2, 1fr); /* Display cards in two columns */
-      gap: 20px; /* Add gap between cards */
-    }
+  nav ul {
+    flex-direction: row; /* Display navigation links horizontally */
   }
-  
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  nav ul li a {
+    padding: 10px 20px;
+  }
+
+  header img {
+    width: 50px; /* Decrease image size for larger views */
+  }
+
+  header span {
+    font-size: 1.8rem; /* Increase font size for larger views */
+  }
+
+  main {
+    max-width: 900px; /* Increase maximum width for main content */
+    margin: 0 auto; /* Center main content horizontally */
+  }
+
+  .card {
+    display: flex; /* Change display to flex */
+    flex-direction: column; /* Stack cards vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    background-color: #007872; /* Apply background color */
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  .card h2 {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .card ul {
+    list-style-type: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Align list items to the left */
+  }
+}
