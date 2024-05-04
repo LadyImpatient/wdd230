@@ -11,12 +11,12 @@
 body {
   font-family: Open Sans;
   line-height: 1.6;
-  background-color: #f8f8f8;
+  background-color: ##fff;
   color: #012624;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1200px; 
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -86,6 +86,10 @@ h1 {
 .card h2 {
   color: #fff;
   margin-bottom: 10px;
+}
+
+main .card a {
+  color: #fff; /* Change link color for learning activities */
 }
 
 footer {
