@@ -179,12 +179,12 @@ nav .menu-btn {
 
 .overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-  color: white;
-  padding: 10px 20px;
-  font-size: 1.5rem;
-  white-space: nowrap; /* Prevent text wrapping */
+  top: 80px;
+  left: 150px;
+  background: radial-gradient( #007872);
+  border: 1px solid rgba(0, 0, 0, .75);
+  padding: 1.5rem;
+  box-shadow: 0 0 3rem #fff;
+  opacity: 0.75;
+  font-family: 'Dancing Script';
 }
