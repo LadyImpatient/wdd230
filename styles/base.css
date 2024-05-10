@@ -1,4 +1,4 @@
-
+/* base.css */
 
 /* Color scheme: 
 #007872 - nav & footer
@@ -11,7 +11,7 @@
 body {
   font-family: Open Sans;
   line-height: 1.6;
-  background-color: ##fff;
+  background-color: #fff;
   color: #012624;
 }
 
@@ -105,4 +105,11 @@ footer p {
 
 footer p:last-child {
   margin-bottom: 0;
-} 
+}
+
+/* Custom CSS for Facebook icon */
+footer img {
+  width: 30px;
+  height: auto;
+  margin-top: 5px;
+}
