@@ -139,6 +139,13 @@ footer img {
   background-color: #222;
 }
 
+.dark-mode-btn {
+  margin-left: 20px;
+  font-family: 'Open Sans';
+  font-size: 1rem;
+}
+
+
 @media (min-width: 768px) {
   nav .menu-btn {
     display: none;
