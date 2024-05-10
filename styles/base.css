@@ -94,6 +94,11 @@ h1 {
   margin-bottom: 10px;
 }
 
+.card:nth-child(2) .visits {
+  color: #fff; /* Set font color to match the card */
+  font-family: 'Open Sans', sans-serif; /* Set font family to match the card */
+}
+
 main .card a {
   color: #fff; /* Change link color for learning activities */
 }
