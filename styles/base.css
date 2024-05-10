@@ -122,3 +122,24 @@ footer img {
 .dark-mode nav ul li a {
   color: #fff;
 }
+
+.dark-mode header {
+  background-color: #222;
+}
+
+.dark-mode .dark-mode-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #014945;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.dark-mode .dark-mode-btn:hover {
+  background-color: #013835;
+}
