@@ -114,6 +114,7 @@ footer img {
   margin-top: 5px;
 }
 
+/* Dark mode styles */
 .dark-mode {
   background-color: #222;
   color: #fff;
@@ -127,6 +128,7 @@ footer img {
   background-color: #222;
 }
 
+/* Dark mode button */
 .dark-mode .dark-mode-btn {
   display: flex;
   align-items: center;
