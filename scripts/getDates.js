@@ -19,3 +19,18 @@ document.addEventListener("DOMContentLoaded", function() {
         lastModifiedParagraph.textContent = "Last modified: " + lastModifiedDate;
     }
 });
+
+const menuBtn = document.querySelector('.menu-btn');
+const menu = document.querySelector('nav ul');
+
+menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('show');
+});
+
+// JavaScript for toggling dark mode
+const darkModeBtn = document.querySelector('.dark-mode-btn');
+const main = document.querySelector('main');
+
+darkModeBtn.addEventListener('click', () => {
+    main.classList.toggle('dark-mode');
+});
