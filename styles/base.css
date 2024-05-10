@@ -1,5 +1,3 @@
-/* base.css */
-
 /* Color scheme: 
 #007872 - nav & footer
 #014945 - hover
@@ -147,19 +145,6 @@ footer img {
 
 .dark-mode header {
   background-color: #222;
-}
-
-header .dark-mode-btn {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-nav .menu-btn {
-  color: #fff; /* Text color */
-  background-color: #007872; /* Background color */
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
 }
 
 @media (min-width: 768px) {
