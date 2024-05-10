@@ -113,3 +113,17 @@ footer img {
   height: auto;
   margin-top: 5px;
 }
+
+.dark-mode body {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode nav ul li a {
+  color: #fff;
+}
+
+.dark-mode footer {
+  background-color: #222;
+  color: #fff;
+}
