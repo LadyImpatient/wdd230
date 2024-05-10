@@ -143,3 +143,8 @@ footer img {
 .dark-mode .dark-mode-btn:hover {
   background-color: #013835;
 }
+
+header .dark-mode-btn {
+  margin-left: auto;
+  margin-right: auto;
+}
