@@ -77,19 +77,6 @@ h1 {
   width: 100%;
   height: auto;
 }
-
-.overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-  color: white;
-  padding: 10px 20px;
-  font-size: 1.5rem;
-  white-space: nowrap; /* Prevent text wrapping */
-}
-
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Cards adapt to available space */
@@ -166,10 +153,15 @@ footer img {
   position: absolute;
   top: 80px;
   left: 150px;
+  transform: translate(-50%, -50%);
   background: radial-gradient( #007872);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
   border: 1px solid rgba(0, 0, 0, .75);
-  padding: 1.5rem;
+  padding: 10px 20px;
   box-shadow: 0 0 3rem #fff;
   opacity: 0.75;
+  font-size: 1.5rem;
+  white-space: nowrap;
   font-family: 'Dancing Script';
 }
