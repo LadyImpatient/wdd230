@@ -150,3 +150,18 @@ header .dark-mode-btn {
   margin-left: auto;
   margin-right: auto;
 }
+
+nav .menu-btn {
+  color: #fff; /* Text color */
+  background-color: #007872; /* Background color */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Hide the hamburger menu button by default for larger screens */
+@media (min-width: 768px) {
+  nav .menu-btn {
+    display: none;
+  }
+}
