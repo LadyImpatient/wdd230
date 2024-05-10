@@ -9,7 +9,7 @@
 */
 
 body {
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
   background-color: #fff;
   color: #012624;
@@ -114,16 +114,11 @@ footer img {
   margin-top: 5px;
 }
 
-.dark-mode body {
+.dark-mode {
   background-color: #222;
   color: #fff;
 }
 
 .dark-mode nav ul li a {
-  color: #fff;
-}
-
-.dark-mode footer {
-  background-color: #222;
   color: #fff;
 }
