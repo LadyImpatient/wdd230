@@ -20,21 +20,3 @@ footer {
     padding: 30px;
 }
 
-.gallery-img {
-    max-width: 100%;
-    height: auto;
-    width: 100%;
-}
-
-.image-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-}
-
-@media only screen and (max-width: 767px) {
-    .gallery-img {
-        height: auto;
-        max-width: 100%;
-    }
-}
