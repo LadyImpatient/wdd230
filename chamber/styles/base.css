@@ -76,11 +76,6 @@ main {
     margin: 0 auto;
 }
 
-.card,
-.centered-box {
-    background-color: #007CC7;
-}
-
 .menu-icon {
     display: block;
     cursor: pointer;
