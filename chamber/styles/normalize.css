@@ -1,9 +1,8 @@
 html {
     line-height: 1.15; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
+    /* Removed -webkit-text-size-adjust */
 }
 
-/* Sections */
 body {
     margin: 0;
 }
