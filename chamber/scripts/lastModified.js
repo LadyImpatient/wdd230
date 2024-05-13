@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", function() {
     // current year
     var currentYear = new Date().getFullYear();
