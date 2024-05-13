@@ -1,12 +1,32 @@
 header {
-    padding: 30px; /* Increased padding for larger header */
+    padding: 30px;
 }
 
 nav {
-    
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #EEFBFB;
+    text-decoration: none;
+
 }
 
 main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    padding: 0 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
     padding: 30px;
 }
 
