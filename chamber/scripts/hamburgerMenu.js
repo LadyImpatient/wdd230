@@ -5,7 +5,6 @@ menuBtn.addEventListener('click', () => {
   menu.classList.toggle('show');
 });
 
-// Hide the menu when a link is clicked
 menu.addEventListener('click', () => {
   menu.classList.remove('show');
 });
