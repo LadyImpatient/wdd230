@@ -10,7 +10,8 @@ header {
 }
 
 nav {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 nav a {
@@ -70,4 +71,19 @@ main {
 .card,
 .centered-box {
     background-color: #007CC7;
+}
+
+.menu-icon {
+    display: none;
+    order: -1;
+}
+
+@media only screen and (min-width: 768px) {
+    .menu-icon {
+        display: none;
+    }
+    nav {
+        display: flex;
+        justify-content: flex-start;
+    }
 }
