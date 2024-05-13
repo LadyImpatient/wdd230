@@ -7,4 +7,4 @@ menuBtn.addEventListener('click', () => {
 
 menu.addEventListener('click', () => {
   menu.classList.remove('show');
-});
+});åç
