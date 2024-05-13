@@ -82,8 +82,4 @@ main {
     .menu-icon {
         display: none;
     }
-    nav {
-        display: flex;
-        justify-content: flex-start;
-    }
 }
