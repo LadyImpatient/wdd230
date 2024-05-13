@@ -1,24 +1,29 @@
-const msToDays = 84600000;
-// today's date
-const theDateToday = new Date();
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the current date
+    const currentDate = new Date();
 
-// initialize display elements
-const todayElement = document.querySelector("#today");
-const christmasElement = document.querySelector("#christmas");
-const christmasDateElement = document.querySelector("#christmasDate");
-const daysElement = document.querySelector("#daysleft");
+    // Get the last visit date from localStorage
+    const lastVisitDate = localStorage.getItem("lastVisitDate");
 
-// processing
-const today = Date.now();
-const christmasDate = new Date(Date.UTC(theDateToday.getFullYear(), 11, 25));
-// check if is the waing days of December, if so ... change to next year.
-if (theDateToday.getMonth() == 11 && theDateToday.getDate() > 25) {
-	christmasDate.setFullYear(christmasDate.getFullYear() + 1);
-}
-// find difference between epoch times in ms and convert to days
-let daysleft = (christmasDate.getTime() - Date.now()) / msToDays;
+    // If it's the user's first visit or no last visit date is stored
+    if (!lastVisitDate) {
+        document.querySelector(".visit-info").textContent = "Welcome! Let us know if you have any questions.";
+    } else {
+        // Calculate the difference in milliseconds between current date and last visit date
+        const timeDifference = currentDate - new Date(lastVisitDate);
 
-todayElement.textContent = today;
-christmasElement.textContent = christmasDate.getTime();
-christmasDateElement.textContent = christmasDate;
-daysElement.textContent = `${daysleft.toFixed(0)} days`;
+        // Convert milliseconds to days
+        const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+        // Display different message based on the days difference
+        if (daysDifference === 0) {
+            document.querySelector(".visit-info").textContent = "Back so soon! Awesome!";
+        } else {
+            const message = daysDifference === 1 ? "day" : "days";
+            document.querySelector(".visit-info").textContent = `You last visited ${daysDifference} ${message} ago.`;
+        }
+    }
+
+    // Store the current date as the last visit date in localStorage
+    localStorage.setItem("lastVisitDate", currentDate.toISOString());
+});
