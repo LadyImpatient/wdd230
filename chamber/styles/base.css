@@ -87,3 +87,30 @@ main {
         display: none;
     }
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Sidebar takes 1/4 and main takes 3/4 of the space */
+    gap: 20px;
+}
+
+.sidebar {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive image gallery */
+    gap: 10px;
+}
+
+.gallery-img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
