@@ -1,3 +1,11 @@
+body {
+    font-family: 'Darker Grotesque'; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab';
+}
+
 header {
     background-color: #12232E;
     color: #EEFBFB;
