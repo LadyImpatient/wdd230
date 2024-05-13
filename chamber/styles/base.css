@@ -74,7 +74,8 @@ main {
 }
 
 .menu-icon {
-    display: none;
+    display: block;
+    cursor: pointer;
     order: -1;
 }
 

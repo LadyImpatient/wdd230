@@ -45,4 +45,5 @@ b, strong {
 
 code, kbd, samp {
     font-family: monospace; /* 1 */
-    font-size: 1
+    font-size: 1;
+}
