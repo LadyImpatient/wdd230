@@ -1,31 +1,73 @@
 header {
     background-color: #12232E;
     color: #EEFBFB;
-    padding: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 30px;
 }
 
 nav {
-    
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #EEFBFB;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #4DA8DA;
+}
+
+.header-content {
+    margin-bottom: auto;
+}
+
+main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-section {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    flex: 1;
+    text-align: right;
 }
 
 .centered-card-section {
     text-align: center;
 }
 
-.centered-card {
-    
-}
-
 .contact-us-section {
     text-align: center;
-}
-
-.contact-us-box {
-    
 }
 
 .footer-content {
     max-width: 800px;
     margin: 0 auto;
+}
+
+.card,
+.centered-box {
+    background-color: #007CC7;
 }
