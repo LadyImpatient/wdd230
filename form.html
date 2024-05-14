@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alicia 'Unga-Dinh - WDD 230 - Web Frontend Development</title>
+        <meta name="description" content="WDD 230 - Web Frontend Development. Alicia's course assignment portal">
+        <meta name="author" content="Alicia 'Unga-Dinh">
+        <meta property="og:title" content="Alicia 'Unga-Dinh - WDD 230 - Web Frontend Development">
+        <meta property="og:description" content="WDD 230 - Web Frontend Development. Alicia's course assignment portal">
+        <meta property="og:url" content="https://www.facebook.com/aliciapuuwai">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="icon" href="images/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header>
+        <img src="images/profile.webp" alt="My Profile Image"> 
+        <span>Alicia 'Unga-Dinh</span>
+    </header>
+    <nav>
+        <div class="menu-btn">&#9776;</div> <!-- Hamburger Menu Button -->
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="https://ladyimpatient.github.io/wdd230/week01/chamber-site-plan">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Form Validation</h2>
+        <form action="record.html" method="get">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}">
+            </div>
+            <div>
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required oninput="checkPassword(this)">
+                <span id="password_message"></span>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address">
+            </div>
+            <div>
+                <label for="page_rating">Page Rating:</label>
+                <input type="range" id="page_rating" name="page_rating" min="1" max="10" step="1" oninput="ratingOutput.value = page_rating.value">
+                <output name="ratingOutput" id="ratingOutput">5</output>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy;<span id="currentYear"></span> Alicia 'Unga-Dinh, USA 🇺🇸</p>
+        <a href="https://www.facebook.com/aliciapuuwai"><img src="images/fbicon.webp" alt="FB Icon"></a>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/pageVisitCounter.js" defer></script>
+    <script src="scripts/darkMode.js" defer></script>
+    <script src="scripts/formValidation.js" defer></script>
+
+</body>
+</html>
