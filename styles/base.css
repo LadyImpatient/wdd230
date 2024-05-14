@@ -1,9 +1,7 @@
 /* Color scheme: 
 #007872 - nav & footer
 #014945 - hover
-#013835
 #012624 - body text
-#06513a
 */
 
 body {
@@ -14,7 +12,7 @@ body {
 }
 
 .container {
-  max-width: 1200px; 
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -61,46 +59,8 @@ nav ul li a:hover {
 
 main {
   padding: 20px 0;
-  max-width: 800px; /* Limit main content width */
-  margin: 0 auto; /* Center main content horizontally */
-}
-
-h1 {
-  text-align: center;
-}
-
-.hero-image {
-  position: relative;
-}
-
-.hero-image img {
-  width: 100%;
-  height: auto;
-}
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Cards adapt to available space */
-  gap: 20px;
-}
-
-.card {
-  background-color: #007872;
-  border-radius: 5px;
-  padding: 20px;
-}
-
-.card h2 {
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-.card:nth-child(2) .visits {
-  color: #fff; /* Set font color to match the card */
-  font-family: 'Open Sans', sans-serif; /* Set font family to match the card */
-}
-
-main .card a {
-  color: #fff; /* Change link color for learning activities */
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 footer {
@@ -118,62 +78,133 @@ footer p:last-child {
   margin-bottom: 0;
 }
 
-/* Custom CSS for Facebook icon */
+form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+form div label {
+  display: block;
+  margin-bottom: 5px;
+  color: #012624;
+}
+
+form div input[type="text"],
+form div input[type="password"],
+form div input[type="email"],
+form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+form div input[type="range"] {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 20px;
+  background: #f9f9f9;
+  outline: none;
+  border-radius: 10px;
+}
+
+form div input[type="range"]::-webkit-slider-runnable-track {
+  height: 10px;
+  background: #d3d3d3;
+  border-radius: 5px;
+}
+
+form div input[type="range"]::-moz-range-track {
+  height: 10px;
+  background: #d3d3d3;
+  border-radius: 5px;
+}
+
+form div input[type="range"]::-ms-track {
+  height: 10px;
+  background: #d3d3d3;
+  border-radius: 5px;
+}
+
+form div input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #007872;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+form div input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #007872;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+form div input[type="range"]::-ms-thumb {
+  width: 20px;
+  height: 20px;
+  background: #007872;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+form div output {
+  display: block;
+  margin-top: 5px;
+  font-weight: bold;
+  text-align: center;
+  color: #007872;
+}
+
 footer img {
   width: 30px;
   height: auto;
   margin-top: 5px;
 }
 
-/* Dark mode styles */
-.dark-mode {
-  background-color: #222;
+form button[type="submit"] {
+  background-color: #007872;
   color: #fff;
+  cursor: pointer;
 }
 
-.dark-mode nav ul li a {
-  color: #fff;
-}
-
-.dark-mode header {
-  background-color: #222;
-}
-
-.dark-mode-btn {
-  margin-left: 20px;
-  font-family: 'Open Sans';
-  font-size: 1rem;
-}
-
-
-@media (min-width: 768px) {
-  nav .menu-btn {
-    display: none;
-  }
-}
-
-.hero-image {
-  position: relative;
-}
-
-.hero-image img {
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 80px;
-  left: 150px;
-  transform: translate(-50%, -50%);
-  background: radial-gradient( #007872);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: 1px solid rgba(0, 0, 0, .75);
-  padding: 10px 20px;
-  box-shadow: 0 0 3rem #fff;
-  opacity: 0.75;
+.menu-btn {
+  display: none;
   font-size: 1.5rem;
-  white-space: nowrap;
-  font-family: 'Dancing Script';
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header {
+    justify-content: center;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .menu-btn:hover + nav {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
 }
