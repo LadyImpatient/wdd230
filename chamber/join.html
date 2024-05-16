@@ -36,6 +36,7 @@
     </header>
     
     <main>
+        <h1>Join Us!</h1>
         <section class="hero-section">
             <div class="hero-image">
                 <img src="images/hero-img.jpg" alt="Hero Image">
@@ -44,42 +45,46 @@
                 <!-- Membership level benefits can be displayed here -->
             </div>
         </section>
+
+        <h4>Fill out the form and we'll contact you in 3-5 business days to confirm your membership.</h4>
     
         <section class="form-section">
-            <form action="thankyou.html" method="get">
-                <label for="first_name">Applicant's First Name:</label>
-                <input type="text" id="first_name" name="first_name" required>
-    
-                <label for="last_name">Applicant's Last Name:</label>
-                <input type="text" id="last_name" name="last_name" required>
-    
-                <label for="position">Applicant's Position:</label>
-                <input type="text" id="position" name="position" pattern="[A-Za-z -]{7,}" required>
-    
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" placeholder="example@example.com" required>
-    
-                <label for="phone">Mobile Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
-    
-                <label for="business_name">Business/Organization Name:</label>
-                <input type="text" id="business_name" name="business_name" required>
-    
-                <label for="membership_level">Membership Level:</label>
-                <select id="membership_level" name="membership_level" required>
-                    <option value="NP Membership">NP Membership</option>
-                    <option value="Bronze Membership">Bronze Membership</option>
-                    <option value="Silver Membership">Silver Membership</option>
-                    <option value="Gold Membership">Gold Membership</option>
-                </select>
-    
-                <label for="description">Business/Organization Description:</label>
-                <textarea id="description" name="description"></textarea>
-    
-                <input type="hidden" id="timestamp" name="timestamp" value="">
-    
-                <input type="submit" value="Submit Form">
-            </form>
+            <div class="form-card">
+                <form action="thankyou.html" method="get">
+                    <label for="first_name">Applicant's First Name:</label>
+                    <input type="text" id="first_name" name="first_name" required>
+                
+                    <label for="last_name">Applicant's Last Name:</label>
+                    <input type="text" id="last_name" name="last_name" required>
+                
+                    <label for="position">Applicant's Position:</label>
+                    <input type="text" id="position" name="position" pattern="[A-Za-z -]{7,}" required>
+                
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                
+                    <label for="phone">Mobile Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                
+                    <label for="business_name">Business/Organization Name:</label>
+                    <input type="text" id="business_name" name="business_name" required>
+                
+                    <label for="membership_level">Membership Level:</label>
+                    <select id="membership_level" name="membership_level" required>
+                        <option value="NP Membership">NP Membership</option>
+                        <option value="Bronze Membership">Bronze Membership</option>
+                        <option value="Silver Membership">Silver Membership</option>
+                        <option value="Gold Membership">Gold Membership</option>
+                    </select>
+                
+                    <label for="description">Business/Organization Description:</label>
+                    <textarea id="description" name="description"></textarea>
+                
+                    <input type="hidden" id="timestamp" name="timestamp" value="">
+                
+                    <input type="submit" value="Submit Form">
+                </form>
+            </div>
         </section>
     </main>
     

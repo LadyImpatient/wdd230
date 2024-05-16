@@ -44,18 +44,23 @@ main {
 }
 
 .hero-section {
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+    flex-direction: row;
 }
 
 .hero-image {
     flex: 1;
+    text-align: center;
 }
 
 .hero-image img {
     max-width: 100%;
     height: auto;
+    margin-bottom: 20px;
+    margin: 0 autho;
+    display: inline-block;
 }
 
 .hero-text {
@@ -142,4 +147,13 @@ main {
 
 .gallery-img:hover {
     transform: scale(1.05);
+}
+
+.form-card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 600px;
 }
