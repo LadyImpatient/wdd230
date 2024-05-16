@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alicia 'Unga-Dinh - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development. Alicia's course assignment portal">
+    <meta name="author" content="Alicia 'Unga-Dinh">
+    <meta property="og:title" content="Alicia 'Unga-Dinh - WDD 230 - Web Frontend Development">
+    <meta property="og:description" content="WDD 230 - Web Frontend Development. Alicia's course assignment Join">
+    <meta property="og:url" content="https://www.facebook.com/aliciapuuwai">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/profile.webp" alt="My Profile Image"> 
+        <span>Alicia 'Unga-Dinh</span>
+    </header>
+    <nav>
+        <div class="menu-btn">&#9776;</div> <!-- Hamburger Menu Button -->
+        <ul>
+            <li><a href="https://ladyimpatient.github.io/wdd230/">Home</a></li>
+            <li><a href="https://ladyimpatient.github.io/wdd230/chamber/">Chamber</a></li>
+            <li><a href="https://ladyimpatient.github.io/wdd230/week01/chamber-site-plan">Site Plan</a></li>
+            <li><a href="https://ladyimpatient.github.io/wdd230/form">Form</a></li>
+        </ul>
+    </nav>
+
+    <h1> Join Us! </h1>
+    
+    <main>
+
+        <aside class="membership-benefits">
+            <h2>Membership Benefits</h2>
+            <p>Here are the benefits for each membership level:</p>
+            <ul>
+                <li><strong>NP Membership:</strong> No fee</li>
+                <li><strong>Bronze Membership:</strong> [Benefits of Bronze Membership]</li>
+                <li><strong>Silver Membership:</strong> [Benefits of Silver Membership]</li>
+                <li><strong>Gold Membership:</strong> [Benefits of Gold Membership]</li>
+            </ul>
+        </aside>
+        
+        <form action="thankyou.html" method="get">
+            <div>
+                <label for="firstName">Applicant's First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div>
+                <label for="lastName">Applicant's Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div>
+                <label for="title">Applicant's Title or Position:</label>
+                <input type="text" id="title" name="title" pattern="[a-zA-Z\s-]{7,}" title="Please enter at least 7 characters consisting of letters, spaces, and hyphens only">
+            </div>
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="example@example.com">
+            </div>
+            <div>
+                <label for="mobile">Mobile Phone Number:</label>
+                <input type="tel" id="mobile" name="mobile" required>
+            </div>
+            <div>
+                <label for="organization">Business/Organization Name:</label>
+                <input type="text" id="organization" name="organization" required>
+            </div>
+            <div>
+                <label for="membership">Membership Level:</label>
+                <select id="membership" name="membership" required>
+                    <option value="NP Membership">NP Membership (No fee)</option>
+                    <option value="Bronze Membership">Bronze Membership</option>
+                    <option value="Silver Membership">Silver Membership</option>
+                    <option value="Gold Membership">Gold Membership</option>
+                </select>
+            </div>
+            <div>
+                <label for="description">Business/Organization Description:</label>
+                <textarea id="description" name="description"></textarea>
+            </div>
+            <input type="hidden" id="timestamp" name="timestamp">
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span> Alicia 'Unga-Dinh, USA 🇺🇸</p>
+        <a href="https://www.facebook.com/aliciapuuwai"><img src="images/fbicon.webp" alt="FB Icon"></a>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/pageVisitCounter.js" defer></script>
+    <script src="scripts/darkMode.js" defer></script>
+    <script>
+        document.getElementById('timestamp').value = new Date().toISOString();
+    </script>
+</body>
+</html>
