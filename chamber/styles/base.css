@@ -77,7 +77,7 @@ main {
 }
 
 .menu-icon {
-    display: block;
+    display: none;
     cursor: pointer;
     order: -1;
 }
@@ -86,6 +86,36 @@ main {
     .gallery-img {
         height: auto;
     }
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.active {
+        display: flex; 
+        flex-direction: column;
+        background-color: #12232E;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+    }
+
+    nav.active a {
+        color: #EEFBFB;
+        padding: 15px 20px;
+        text-decoration: none;
+        display: block;
+    }
+}
+
+#menu-toggle {
+    display: none; /* Hide the checkbox */
 }
 
 .grid-container {
