@@ -37,53 +37,65 @@
     
     <main>
         <h1>Join Us!</h1>
-        <section class="hero-section">
-            <div class="hero-image">
-                <img src="images/hero-img.jpg" alt="Hero Image">
-            </div>
-            <div class="hero-text">
-                <!-- Membership level benefits can be displayed here -->
-            </div>
-        </section>
-
         <h4>Fill out the form and we'll contact you in 3-5 business days to confirm your membership.</h4>
     
         <section class="form-section">
-            <div class="form-card">
-                <form action="thankyou.html" method="get">
-                    <label for="first_name">Applicant's First Name:</label>
-                    <input type="text" id="first_name" name="first_name" required>
-                
-                    <label for="last_name">Applicant's Last Name:</label>
-                    <input type="text" id="last_name" name="last_name" required>
+            <div class="form-container">
+                <aside>
+                    <h2>Membership Levels</h2>
+                    <div class="membership-level">
+                        <h3>NP Membership</h3>
+                        <p>For non-profit organizations. Benefits include access to networking events, member directory listing, and marketing support.</p>
+                    </div>
+                    <div class="membership-level">
+                        <h3>Bronze Membership</h3>
+                        <p>Basic membership for small businesses. Includes all NP benefits plus a business profile on the Chamber website and eligibility to participate in Chamber events.</p>
+                    </div>
+                    <div class="membership-level">
+                        <h3>Silver Membership</h3>
+                        <p>Ideal for growing businesses. Includes all Bronze benefits plus enhanced directory listing, additional marketing opportunities, and discounts on event sponsorships.</p>
+                    </div>
+                    <div class="membership-level">
+                        <h3>Gold Membership</h3>
+                        <p>Premium membership for established businesses. Includes all Silver benefits plus priority event sponsorships, exclusive networking opportunities, and dedicated support from Chamber staff.</p>
+                    </div>
+                </aside>
+                <div class="form-card">
+                    <form action="thankyou.html" method="get">
+                        <label for="first_name">Applicant's First Name:</label>
+                        <input type="text" id="first_name" name="first_name" required>
+                    
+                        <label for="last_name">Applicant's Last Name:</label>
+                        <input type="text" id="last_name" name="last_name" required>
 
-                    <label for="business_name">Business/Organization Name:</label>
-                    <input type="text" id="business_name" name="business_name" required>
+                        <label for="business_name">Business/Organization Name:</label>
+                        <input type="text" id="business_name" name="business_name" required>
 
-                    <label for="description">Business/Organization Description:</label>
-                    <textarea id="description" name="description"></textarea>
-                
-                    <label for="position">Applicant's Position:</label>
-                    <input type="text" id="position" name="position" pattern="[A-Za-z -]{7,}" required>
-                
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
-                
-                    <label for="phone">Mobile Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" required>
-                
-                    <label for="membership_level">Membership Level:</label>
-                    <select id="membership_level" name="membership_level" required>
-                        <option value="NP Membership">NP Membership</option>
-                        <option value="Bronze Membership">Bronze Membership</option>
-                        <option value="Silver Membership">Silver Membership</option>
-                        <option value="Gold Membership">Gold Membership</option>
-                    </select>
-                
-                    <input type="hidden" id="timestamp" name="timestamp" value="">
-                
-                    <input type="submit" value="Submit Form">
-                </form>
+                        <label for="description">Business/Organization Description:</label>
+                        <textarea id="description" name="description"></textarea>
+                    
+                        <label for="position">Applicant's Position:</label>
+                        <input type="text" id="position" name="position" pattern="[A-Za-z -]{7,}" required>
+                    
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                    
+                        <label for="phone">Mobile Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    
+                        <label for="membership_level">Membership Level:</label>
+                        <select id="membership_level" name="membership_level" required>
+                            <option value="NP Membership">NP Membership</option>
+                            <option value="Bronze Membership">Bronze Membership</option>
+                            <option value="Silver Membership">Silver Membership</option>
+                            <option value="Gold Membership">Gold Membership</option>
+                        </select>
+                    
+                        <input type="hidden" id="timestamp" name="timestamp" value="">
+                    
+                        <input type="submit" value="Submit Form">
+                    </form>
+                </div>
             </div>
         </section>
     </main>

@@ -12,12 +12,19 @@ header {
     text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center; /* Center align items */
+    justify-content: center; /* Center justify items */
     padding: 30px;
+    width: 100%; /* Ensure it takes full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    position: relative; /* Ensure it stays in normal document flow */
 }
 
 nav {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Ensure nav items wrap on smaller screens */
+    width: 100%; /* Ensure it takes full width */
 }
 
 nav a {
@@ -32,7 +39,7 @@ nav a:hover {
 }
 
 .header-content {
-    margin-bottom: auto;
+    margin-bottom: 20px; /* Add some margin to separate content */
 }
 
 main {
@@ -155,18 +162,152 @@ footer {
     transform: scale(1.05);
 }
 
-.form-card {
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: start;
+}
+
+aside {
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 10px;
-    margin-top: 20px;
-    width: 80%;
-    max-width: 600px;
+}
+
+aside h2 {
+    font-family: 'Roboto Slab';
+}
+
+.membership-level {
+    margin-bottom: 20px;
+}
+
+.membership-level h3 {
+    font-family: 'Roboto Slab';
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 700px) {
+    .form-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+hamburgerMenu.js
+
+document.addEventListener('DOMContentLoaded', function () {
+  const menuToggle = document.querySelector('#menu-toggle');
+  const nav = document.querySelector('nav');
+
+  if (menuToggle && nav) {
+    menuToggle.addEventListener('click', function () {
+      nav.classList.toggle('active');
+    });
+  }
+
+  // Add event listener to close menu when clicking on a link
+  nav.addEventListener('click', (event) => {
+    if (event.target.tagName === 'A') {
+      nav.classList.remove('active');
+      menuToggle.checked = false; // Uncheck the checkbox to close the menu
+    }
+  });
+});
+
+
+normalize.css
+
+html {
+    line-height: 1.15;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+pre {
+    font-family: monospace;
+    font-size: 1em;
+}
+
+a {
+    background-color: transparent;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline dotted;
+}
+
+b, strong {
+    font-weight: bolder;
+}
+
+code, kbd, samp {
+    font-family: monospace;
+    font-size: 1em;
+}
+
+larger.css
+
+main {
+    padding: 30px;
+    max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
+}
+
+body {
+    padding: 0 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+footer {
+    padding: 30px;
+    background-color: #12232E; /* Ensure footer background color matches the design */
+    color: #EEFBFB; /* Ensure text color is readable */
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+    .image-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive image gallery */
+    }
 }
 
 .form-card form label {
-    display: block;
+    display: block; /* Display each label on a new line */
     margin-bottom: 5px;
 }
 
@@ -176,4 +317,5 @@ footer {
     width: 100%; 
     margin-bottom: 15px;
     box-sizing: border-box;
+    display: block; /* Display each form element on a new line */
 }
