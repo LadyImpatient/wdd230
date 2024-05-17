@@ -3,6 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var lastModifiedParagraph = document.getElementById("lastModified");
     if (lastModifiedParagraph) {
-        lastModifiedParagraph.textContent = "Last modified: " + lastModifiedDate;
+        lastModifiedParagraph.textContent = " " + lastModifiedDate;
     }
 });

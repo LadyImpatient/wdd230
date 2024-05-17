@@ -29,6 +29,6 @@ footer {
 
 @media only screen and (max-width: 767px) {
     .image-gallery {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive image gallery */
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
 }

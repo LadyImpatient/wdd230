@@ -1,9 +1,9 @@
 body {
-    font-family: 'Darker Grotesque'; 
+    font-family: 'Darker Grotesque', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto Slab';
+    font-family: 'Roboto Slab', serif;
 }
 
 header {
@@ -12,7 +12,6 @@ header {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding: 30px;
 }
 
@@ -78,6 +77,16 @@ main {
     margin: 0 auto;
 }
 
+footer {
+    background-color: #12232E;
+    color: #EEFBFB;
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
 .menu-icon {
     display: none;
     cursor: pointer;
@@ -98,7 +107,7 @@ main {
     }
 
     nav.active {
-        display: flex; 
+        display: flex;
         flex-direction: column;
         background-color: #12232E;
         position: absolute;
