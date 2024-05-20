@@ -212,3 +212,26 @@ aside h2 {
     }
 }
 
+aside {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+aside h2 {
+    font-family: 'Roboto Slab';
+    text-align: center;
+    margin-top: 0;  /* Remove any top margin */
+    margin-bottom: 20px;  /* Adjust bottom margin as needed */
+}
+
+main {
+    text-align: center;
+}
+
+main h1, main h4 {
+    text-align: center;
+    margin-top: 0;  /* Adjust top margin as needed */
+    margin-bottom: 20px;  /* Adjust bottom margin as needed */
+}
