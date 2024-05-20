@@ -133,10 +133,26 @@ footer {
     align-items: start;
 }
 
+.form-card form label {
+    display: block;
+    margin-bottom: 5px;  /* Keep margin bottom for spacing between label and input */
+    margin-top: 0;       /* Ensure there's no extra margin above the label */
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: start;
+    padding: 0;  /* Remove any extra padding */
+    margin: 0;   /* Remove any extra margin */
+}
+
 aside {
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 10px;
+    margin: 0;  /* Ensure no extra margin is added */
 }
 
 aside h2 {
@@ -155,6 +171,8 @@ aside h2 {
 @media only screen and (max-width: 700px) {
     .form-container {
         grid-template-columns: 1fr;
+        padding: 0;
+        margin: 0;
     }
 }
 
@@ -193,3 +211,4 @@ aside h2 {
         grid-template-columns: 1fr;
     }
 }
+
