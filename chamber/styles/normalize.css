@@ -1,12 +1,11 @@
 html {
     line-height: 1.15;
 }
-
 body {
     margin: 0;
+    padding-top: 30px;
 }
-
-main {
+main, header, footer {
     display: block;
 }
 
