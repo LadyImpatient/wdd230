@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raymore Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <meta name="description" content="Raymore Chamber Site">
     <meta name="author" content="Alicia 'Unga-Dinh'">
@@ -37,6 +37,7 @@
     
     <main>
         <h1>Join Us!</h1>
+        <h4>Fill out the form and we'll contact you in 3-5 business days to confirm your membership.</h4>
     
         <section class="form-section">
             <div class="form-container">
@@ -60,8 +61,7 @@
                     </div>
                 </aside>
                 <div class="form-card">
-                    <h4>Please fill out the application below: </h6>
-                    <form action="https://ladyimpatient.github.io/wdd230/chamber/thankyou" method="post">
+                    <form id="membershipForm">
                         <label for="first_name">Applicant's First Name:</label>
                         <input type="text" id="first_name" name="first_name" required>
                     
@@ -83,7 +83,7 @@
                         <label for="phone">Mobile Phone Number:</label>
                         <input type="tel" id="phone" name="phone" required>
                     
-                        <label for="membership_level" class="centered-label">Membership Level:</label>
+                        <label for="membership_level">Membership Level:</label>
                         <select id="membership_level" name="membership_level" required>
                             <option value="NP Membership">NP Membership</option>
                             <option value="Bronze Membership">Bronze Membership</option>
@@ -110,5 +110,6 @@
 
     <script src="scripts/hamburgerMenu.js" defer></script> 
     <script src="scripts/lastModified.js" defer></script>
+    <script src="scripts/formSubmit.js" defer></script>
 </body>
 </html>
