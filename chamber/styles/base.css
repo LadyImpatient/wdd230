@@ -269,3 +269,28 @@ footer {
 aside {
     background-color: #f0f;
 }
+
+.event-container {
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    display: flex;
+}
+.event-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px; 
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.event-card p {
+    margin-bottom: 5px;
+}
+

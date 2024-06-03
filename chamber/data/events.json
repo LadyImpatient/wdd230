@@ -1,17 +1,33 @@
 [
     {
-        "title": "June Networking Mixer",
-        "start": "2024-06-15",
-        "description": "Join us for an evening of networking with fellow chamber members and local business professionals. Refreshments will be provided."
+      "title": "Summer Festival",
+      "date": "July 10, 2024",
+      "description": "Join us for a day of music, food, and fun in the sun!"
     },
     {
-        "title": "Annual Chamber BBQ",
-        "start": "2024-07-04",
-        "description": "Celebrate Independence Day with our annual chamber BBQ! Enjoy delicious food, live music, games, and more."
+      "title": "Art Exhibition",
+      "date": "August 5, 2024",
+      "description": "Explore the works of local artists in our annual art exhibition."
     },
     {
-        "title": "Small Business Workshop",
-        "start": "2024-08-10",
-        "description": "Learn valuable insights and strategies for growing your small business at our workshop led by industry experts."
+      "title": "Community Cleanup",
+      "date": "September 15, 2024",
+      "description": "Help keep our community clean and green by participating in the cleanup event."
+    },
+    {
+      "title": "Food Truck Festival",
+      "date": "October 20, 2024",
+      "description": "Savor delicious dishes from various food trucks at our annual festival."
+    },
+    {
+      "title": "Holiday Market",
+      "date": "December 8, 2024",
+      "description": "Shop for unique gifts and crafts at our festive holiday market."
+    },
+    {
+      "title": "Fitness Challenge",
+      "date": "January 15, 2025",
+      "description": "Take on the fitness challenge and kickstart your healthy lifestyle journey!"
     }
-]
+  ]
+  

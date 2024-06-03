@@ -22,7 +22,6 @@
         "address": "789 Elm St, Raymore, MO 64083",
         "phone": "(555) 789-0123",
         "website": "http://www.123enterprises.com",
-        "image": "photo6.jpg",
         "membership_level": "Bronze",
         "other_info": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
@@ -31,7 +30,6 @@
         "address": "987 Pine St, Raymore, MO 64083",
         "phone": "(555) 456-7890",
         "website": "http://www.loremipsuminc.com",
-        "image": "hardware.jpg",
         "membership_level": "Gold",
         "other_info": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
@@ -40,7 +38,6 @@
         "address": "246 Cedar St, Raymore, MO 64083",
         "phone": "(555) 654-3210",
         "website": "http://www.acmecorp.com",
-        "image": "photo4.jpg",
         "membership_level": "Silver",
         "other_info": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
@@ -49,7 +46,6 @@
         "address": "135 Maple St, Raymore, MO 64083", 
         "phone": "(555) 321-0987",
         "website": "http://www.widgetsandgadgets.com",
-        "image": "widgets-gadgets-ltd.jpg",
         "membership_level": "Bronze",
         "other_info": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
     },
@@ -58,7 +54,6 @@
         "address": "579 Walnut St, Raymore, MO 64083",
         "phone": "(555) 890-1234",
         "website": "http://www.sunshineservices.com",
-        "image": "photo3.jpg",
         "membership_level": "Gold",
         "other_info": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
     }

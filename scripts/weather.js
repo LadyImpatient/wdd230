@@ -1,4 +1,4 @@
-const apiKey = 'YOUR_API_KEY_HERE';
+const apiKey = 'd65f03efd0b764d01b9a367d4f14db93';
 const city = 'Raymore';
 const state = 'MO';
 const country = 'US';
@@ -8,7 +8,7 @@ const currentTemp = document.getElementById('current-temp');
 
 const fetchWeather = async () => {
     try {
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${Raymore},${MO},${US}&appid=${d65f03efd0b764d01b9a367d4f14db93}&units=imperial`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=38.80&lon=-94.45&appid=d65f03efd0b764d01b9a367d4f14db93`);
         if (response.ok) {
             const data = await response.json();
             const temp = data.main.temp;
