@@ -35,22 +35,24 @@
             </div>
         </section>
         
-        <!-- Spotlight advertisements section -->
-        <section class="spotlight-section">
-            <h2>Spotlight Advertisements</h2>
-            <div class="spotlight-container">
-                <div class="spotlight-card"></div>
-            </div>
-        </section>
-        <section class="card">
-            <h2>Weather</h2>
-            <p>Raymore, Missouri, USA</p>
+        <div class="grid-container">
+            <section class="card">
+                <h2>Weather</h2>
+                <p>Raymore, Missouri, USA</p>
                 <figure>
                     <img id="weather-icon" src="" alt="">
                     <figcaption id="weather-desc"></figcaption>
                 </figure>
                 <p id="current-temp"></p>
             </section>
+
+            <section class="spotlight-section">
+                <h2>Spotlight Advertisements</h2>
+                <div class="spotlight-container">
+                    <div class="spotlight-card"></div>
+                </div>
+            </section>
+        </div>
         
         <section class="event-calendar-section">
             <h2>Upcoming Events</h2>
@@ -60,12 +62,15 @@
         </section>
         
         
-        <section class="centered-box-section">
-            <div class="centered-box">
-                <h2>Subscribe today for our monthly newsletter!</h2>
-                <!--  form information here -->
-            </div>
+        <section class="newsletter-section">
+            <h2>Subscribe to Our Monthly Newsletter</h2>
+            <form id="newsletter-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
         </section>
+                
     </main>
 
     <footer>
