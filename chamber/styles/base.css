@@ -43,28 +43,19 @@ nav a:hover {
     text-align: center;
 }
 .hero-image img {
-    max-width: 100%;
+    max-width: 200%;
     height: auto;
-    max-height: 20px; /* Adjust this value as needed */
-    width: 50%;
+    max-height: 600px; /* Adjust this value as needed */
+    width: 100%;
     object-fit: cover; /* Ensures the image covers the container */
   }
   
 .hero-image {
-    position: relative;
+    position: relative; 
     text-align: center;
     color: white;
   }
   
-.overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    padding: 10px;
-    border-radius: 5px;
-}
 footer {
     background-color: #12232E;
     color: #EEFBFB;
