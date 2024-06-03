@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 <p>${member.address}</p>
                 <p>Phone: ${member.phone}</p>
                 <p><a href="${member.website}" target="_blank">${member.website}</a></p>
-                <p>Membership Level: ${member.membership_level}</p>
                 <p>${member.other_info}</p>
             `;
             spotlightContainer.appendChild(spotlightAd);

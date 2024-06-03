@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.0/main.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -43,9 +44,24 @@
                 <!-- Spotlight advertisements will be dynamically generated here -->
             </div>
         </section>
-
-        <!-- Other sections as needed -->
-
+        <section class="weather-card-section">
+            <h2>Weather Information</h2> <!-- Label for the weather card section -->
+            <div class="weather-card">
+                <!-- Weather card content here -->
+            </div>
+        </section>
+        
+        <section class="event-calendar-section">
+            <h2>Upcoming Events</h2>
+            <div id="calendar"></div>
+        </section>
+        
+        <section class="centered-box-section">
+            <div class="centered-box">
+                <h2>Fill out the form to join us</h2>
+                <!-- Contact form or contact information here -->
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -61,6 +77,9 @@
 
     <script src="scripts/hamburgerMenu.js" defer></script> 
     <script src="scripts/lastModified.js" defer></script>
-    <script src="scripts/index.js" defer></script> <!-- Include the script for spotlight advertisements -->
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.0/main.min.js"></script>
+    <script src="scripts/calendar.js" defer></script>
 </body>
 </html>
