@@ -296,3 +296,52 @@ main h1, main h4 {
     cursor: pointer;
 }
 
+.spotlight-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.spotlight-ad {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    align-items: center;
+}
+
+.spotlight-img {
+    flex-shrink: 0; /* Prevent image from shrinking */
+    margin-right: 20px; /* Space between image and text */
+    
+}
+
+.spotlight-img img {
+    width: 1px; /* Fixed width for the image */
+    height: 1px; /* Fixed height for the image */
+    object-fit: cover; /* Ensure image covers the area */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+.spotlight-text {
+    flex-grow: 1; /* Allow text to take remaining space */
+}
+
+.spotlight-text h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.spotlight-text p {
+    margin-bottom: 5px;
+}
+
+.spotlight-text a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.spotlight-text a:hover {
+    text-decoration: underline;
+}
