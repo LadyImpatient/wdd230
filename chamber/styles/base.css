@@ -299,5 +299,8 @@ aside {
     margin-bottom: 5px;
 }
 
+#closeBannerBtn {
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
 
 
