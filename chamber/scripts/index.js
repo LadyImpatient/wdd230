@@ -1,56 +1,35 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const spotlightContainer = document.querySelector(".spotlight-container");
+// index.js
 
-    function fetchDirectoryData() {
-        fetch("data/members.json")
-            .then(response => response.json())
-            .then(data => displaySpotlightAds(data))
-            .catch(error => console.error("Error fetching directory data:", error));
-    }
+document.addEventListener('DOMContentLoaded', function() {
+    const eventsContainer = document.querySelector('.event-calendar-section');
 
-    function displaySpotlightAds(members) {
-        // Filter members with silver or gold membership levels for spotlight advertisements
-        const spotlightMembers = members.filter(member => member.membership_level === 'Silver' || member.membership_level === 'Gold');
-        
-        // Shuffle the spotlight members
-        const shuffledSpotlightMembers = shuffle(spotlightMembers);
+    const events = [
+        { title: "Summer Festival", date: "July 10, 2024", description: "Join us for a day of music, food, and fun in the sun!" },
+        { title: "Art Exhibition", date: "August 5, 2024", description: "Explore the works of local artists in our annual art exhibition." },
+        { title: "Community Cleanup", date: "September 15, 2024", description: "Help keep our community clean and green by participating in the cleanup event." }
+        // Add more events as needed
+    ];
 
-        // Display the first two to three spotlight members
-        const spotlightAds = shuffledSpotlightMembers.slice(0, Math.floor(Math.random() * 2) + 2);
+    events.forEach(event => {
+        const eventCard = document.createElement('div');
+        eventCard.classList.add('event-card');
 
-        // Dynamically create HTML for spotlight advertisements
-        spotlightAds.forEach(member => {
-            const spotlightAd = document.createElement("div");
-            spotlightAd.classList.add("spotlight-ad");
-            spotlightAd.innerHTML = `
-                <h3>${member.name}</h3>
-                <p>${member.address}</p>
-                <p>Phone: ${member.phone}</p>
-                <p><a href="${member.website}" target="_blank">${member.website}</a></p>
-                <p>${member.other_info}</p>
-            `;
-            spotlightContainer.appendChild(spotlightAd);
-        });
-    }
+        const eventTitle = document.createElement('h3');
+        eventTitle.classList.add('event-title');
+        eventTitle.textContent = event.title;
 
-    // Function to shuffle array
-    function shuffle(array) {
-        let currentIndex = array.length, temporaryValue, randomIndex;
+        const eventDate = document.createElement('p');
+        eventDate.classList.add('event-date');
+        eventDate.textContent = event.date;
 
-        // While there remain elements to shuffle...
-        while (currentIndex !== 0) {
-            // Pick a remaining element...
-            randomIndex = Math.floor(Math.random() * currentIndex);
-            currentIndex -= 1;
+        const eventDescription = document.createElement('p');
+        eventDescription.classList.add('event-description');
+        eventDescription.textContent = event.description;
 
-            // And swap it with the current element.
-            temporaryValue = array[currentIndex];
-            array[currentIndex] = array[randomIndex];
-            array[randomIndex] = temporaryValue;
-        }
+        eventCard.appendChild(eventTitle);
+        eventCard.appendChild(eventDate);
+        eventCard.appendChild(eventDescription);
 
-        return array;
-    }
-
-    fetchDirectoryData();
+        eventsContainer.appendChild(eventCard);
+    });
 });

@@ -122,7 +122,7 @@ form div input[type="range"]::-webkit-slider-runnable-track {
 }
 
 form div input[type="range"]::-moz-range-track {
-  height: 10px;
+  height: 10px; 
   background: #d3d3d3;
   border-radius: 5px;
 }
@@ -148,7 +148,7 @@ form div input[type="range"]::-moz-range-thumb {
   height: 20px;
   background: #007872;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: 50%; 
 }
 
 form div input[type="range"]::-ms-thumb {
@@ -207,4 +207,32 @@ form button[type="submit"] {
     flex-direction: column;
     align-items: center;
   }
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  max-height: 60vh; /* Ensures the image does not exceed 60% of the viewport height */
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  font-family: Great Vibes;
+  top: 10%;
+  left: 18%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
 }
