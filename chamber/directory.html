@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raymore Chamber of Commerce - Directory</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico"> <!-- Changed type to "image/x-icon" -->
+    <meta name="description" content="Raymore Chamber Site">
+    <meta name="author" content="Alicia 'Unga-Dinh'"> <!-- Added closing single quote -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Raymore Chamber of Commerce</h1>
+            <p>Welcome to the Raymore Chamber of Commerce website. Connecting businesses and community members.</p>
+        </div>
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <nav>
+            <a href="https://ladyimpatient.github.io/wdd230/chamber/">Home</a>
+            <a href="https://ladyimpatient.github.io/wdd230/chamber/join">Join</a>
+            <a href="https://ladyimpatient.github.io/wdd230/chamber/discover">Discover</a>
+            <a href="#">Event Calendar</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="member-directory">
+            <div class="toggle-view">
+                <button id="grid-view-btn">Grid View</button>
+                <button id="list-view-btn">List View</button>
+            </div>
+            <div class="members-container grid-view">
+                <!-- Member cards or list items will be dynamically generated here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="join-us">
+            <p>Contact Us: </p>
+            <!-- Contact information here -->
+            <p>Developed by Alicia 'Unga-Dinh' for WDD 230. Last modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/hamburgerMenu.js" defer></script> 
+    <script src="scripts/lastModified.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</body>
+</html>
