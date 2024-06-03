@@ -57,3 +57,14 @@ aside h2, .membership-level h3 {
 .membership-level h3 {
     margin-top: 0;
 }
+
+.members-container.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust column width as needed */
+    gap: 20px; /* Adjust gap between grid items */
+}
+
+.members-container.list-view .member-item {
+    border: 1px solid #ccc; /* Add borders for list items */
+    padding: 10px; /* Add padding to separate list items */
+}
