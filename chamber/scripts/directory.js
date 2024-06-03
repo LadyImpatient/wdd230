@@ -11,22 +11,33 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function displaySpotlights(members) {
-        spotlightContainer.innerHTML = ""; 
-
+        spotlightContainer.innerHTML = "";
+    
+        // Filter and shuffle the members array
         const spotlightMembers = members.filter(member => member.membership_level === "Gold");
-
+        shuffleArray(spotlightMembers);
+    
         spotlightMembers.forEach(member => {
             const spotlightItem = document.createElement("div");
-            spotlightItem.classList.add("spotlight-ad"); // Correct class name
+            spotlightItem.classList.add("spotlight-ad");
             spotlightItem.innerHTML = `
                 <h3>${member.name}</h3>
-                <p>${member.address}</p>
-                <p>Phone: ${member.phone}</p>
-                <p><a href="${member.website}" target="_blank">${member.website}</a></p>
-                <img src="images/${member.image}" alt="${member.name}">
+                <div class="card-content">
+                    <p>${member.address}</p>
+                    <p>Phone: ${member.phone}</p>
+                    <p><a href="${member.website}" target="_blank">${member.website}</a></p>
+                </div>
             `;
             spotlightContainer.appendChild(spotlightItem);
         });
+    }    
+
+    // Function to shuffle an array (Fisher-Yates algorithm)
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
     }
 
     fetchMemberData();

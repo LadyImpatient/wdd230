@@ -1,3 +1,4 @@
+/* Base styles */
 body {
     font-family: 'Darker Grotesque', sans-serif;
     margin: 0;
@@ -5,9 +6,11 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', serif;
 }
+
 header {
     background-color: #12232E;
     color: #EEFBFB;
@@ -21,41 +24,47 @@ header {
     box-sizing: border-box;
     position: relative;
 }
+
 nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
 }
+
 nav a {
     display: inline-block;
     padding: 10px 20px;
     color: #EEFBFB;
     text-decoration: none;
 }
+
 nav a:hover {
     background-color: #4DA8DA;
 }
+
 .header-content {
     margin-bottom: 20px;
 }
+
 .hero-section, .centered-card-section, .contact-us-section {
     text-align: center;
 }
+
 .hero-image img {
     max-width: 200%;
     height: auto;
     max-height: 600px; /* Adjust this value as needed */
     width: 100%;
     object-fit: cover; /* Ensures the image covers the container */
-  }
-  
+}
+
 .hero-image {
     position: relative; 
     text-align: center;
     color: white;
-  }
-  
+}
+
 footer {
     background-color: #12232E;
     color: #EEFBFB;
@@ -64,6 +73,7 @@ footer {
     width: 100%;
     position: relative;
 }
+
 .menu-icon {
     display: none;
     cursor: pointer;
@@ -181,42 +191,6 @@ aside h2 {
     }
 }
 
-@media only screen and (max-width: 767px) {
-    .image-gallery {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
-}
-@media only screen and (max-width: 700px) {
-    .gallery-img {
-        height: auto;
-    }
-    .menu-icon {
-        display: block;
-    }
-    nav {
-        display: none;
-    }
-    nav.active {
-        display: flex;
-        flex-direction: column;
-        background-color: #12232E;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        z-index: 999;
-    }
-    nav.active a {
-        color: #EEFBFB;
-        padding: 15px 20px;
-        text-decoration: none;
-        display: block;
-    }
-    .form-container {
-        grid-template-columns: 1fr;
-    }
-}
-
 aside {
     text-align: center;
     background-color: #f0f0f0;
@@ -241,7 +215,7 @@ main h1, main h4 {
     margin-bottom: 20px;  /* Adjust bottom margin as needed */
 }
 
-/* Add these styles to your existing CSS file */
+/* Spotlight container and ad styles */
 .spotlight-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -249,99 +223,48 @@ main h1, main h4 {
 }
 
 .spotlight-ad {
+    display: flex;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 10px;
     background-color: #f9f9f9;
+    align-items: center;
 }
 
-.spotlight-ad h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.spotlight-ad p {
-    margin-bottom: 5px;
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.spotlight-ad a {
-    color: #007bff;
-    text-decoration: none;
+footer {
+    padding: 30px;
 }
 
-.spotlight-ad a:hover {
-    text-decoration: underline;
-}
-.banner {
-    display: none;
-    background-color: #f0f0f0;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+.form-card form label,
+.form-card form input,
+.form-card form select,
+.form-card form textarea {
+    display: block;
     width: 100%;
-    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    margin-top: 0;
 }
 
-.banner-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#closeBannerBtn {
-    background-color: #ddd;
-    border: none;
-    padding: 8px 12px;
-    cursor: pointer;
-}
-
-.spotlight-container {
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: 1fr 3fr;
     gap: 20px;
 }
 
-.spotlight-ad {
-    display: flex;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    align-items: center;
-}
-
-.spotlight-img {
-    flex-shrink: 0; /* Prevent image from shrinking */
-    margin-right: 20px; /* Space between image and text */
-    
-}
-
-.spotlight-img img {
-    width: 1px; /* Fixed width for the image */
-    height: 1px; /* Fixed height for the image */
-    object-fit: cover; /* Ensure image covers the area */
-    border-radius: 10px; /* Optional: Rounded corners */
-}
-
-.spotlight-text {
-    flex-grow: 1; /* Allow text to take remaining space */
-}
-
-.spotlight-text h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-.spotlight-text p {
-    margin-bottom: 5px;
-}
-
-.spotlight-text a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.spotlight-text a:hover {
-    text-decoration: underline;
-}
+.sidebar,
+aside {
+    background-color: #f0f
