@@ -1,6 +1,6 @@
 [
     {
-        "name": "ABC Company",
+        "name": "ABC Cafe",
         "address": "123 Main St, Raymore, MO 64083",
         "phone": "(555) 123-4567",
         "website": "http://www.abccompany.com",
@@ -9,7 +9,7 @@
         "other_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
-        "name": "XYZ Corporation",
+        "name": "XYZ Toys",
         "address": "456 Oak St, Raymore, MO 64083",
         "phone": "(555) 987-6543",
         "website": "http://www.xyzcorp.com",
@@ -18,7 +18,7 @@
         "other_info": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-        "name": "123 Enterprises",
+        "name": "123 & Me",
         "address": "789 Elm St, Raymore, MO 64083",
         "phone": "(555) 789-0123",
         "website": "http://www.123enterprises.com",
@@ -27,7 +27,7 @@
         "other_info": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
-        "name": "Lorem Ipsum Inc.",
+        "name": "Lorem Ipsum Hardware.",
         "address": "987 Pine St, Raymore, MO 64083",
         "phone": "(555) 456-7890",
         "website": "http://www.loremipsuminc.com",
@@ -36,7 +36,7 @@
         "other_info": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
-        "name": "Acme Corporation",
+        "name": "Acme Bank",
         "address": "246 Cedar St, Raymore, MO 64083",
         "phone": "(555) 654-3210",
         "website": "http://www.acmecorp.com",
@@ -45,7 +45,7 @@
         "other_info": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
-        "name": "Widgets & Gadgets Ltd.",
+        "name": "Widgets & Gadgets",
         "address": "135 Maple St, Raymore, MO 64083",
         "phone": "(555) 321-0987",
         "website": "http://www.widgetsandgadgets.com",
