@@ -1,0 +1,49 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "week01/chamber-site-plan.html",
+                    "title": "Site Plan"
+                }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "week02/some-activity.html",
+                    "title": "W2 Activity"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "week03/another-activity.html",
+                    "title": "W3 Activity"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "week04/fourth-activity.html",
+                    "title": "W4 Activity"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "week05/fifth-activity.html",
+                    "title": "W5 Activity"
+                }
+            ]
+        }
+    ]
+}

@@ -6,9 +6,6 @@
     <title>Alicia 'Unga-Dinh - WDD 230 - Web Frontend Development</title>
     <meta name="description" content="WDD 230 - Web Frontend Development. Alicia's course assignment portal">
     <meta name="author" content="Alicia 'Unga-Dinh">
-    <meta property="og:title" content="Alicia 'Unga-Dinh - WDD 230 - Web Frontend Development">
-    <meta property="og:description" content="WDD 230 - Web Frontend Development. Alicia's course assignment portal">
-    <meta property="og:url" content="https://www.facebook.com/aliciapuuwai">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -16,9 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -26,7 +20,7 @@
         <span>Alicia 'Unga-Dinh</span>
     </header>
     <nav>
-        <div class="menu-btn">&#9776;</div> <!-- Hamburger Menu Button -->
+        <div class="menu-btn">&#9776;</div>
         <ul>
             <li><a href="https://ladyimpatient.github.io/wdd230/">Home</a></li>
             <li><a href="https://ladyimpatient.github.io/wdd230/chamber/">Chamber</a></li>
@@ -34,15 +28,10 @@
             <li><a href="https://ladyimpatient.github.io/wdd230/form">Form</a></li>
         </ul>
     </nav>
-    <div class="dark-mode-btn" onclick="toggleDarkMode()">
-        <span>Dark Mode</span> 
-    </div>
     <main>
         <div class="hero-image">
             <picture>
-                <!-- Mobile view -->
                 <source media="(max-width: 600px)" srcset="images/laie_hawaii_temple.webp">
-                <!-- Larger view -->
                 <source media="(min-width: 601px)" srcset="images/laie_hawaii_temple.webp">
                 <img src="images/laie_hawaii_temple.webp" alt="Lāi'e Hawai'i Temple">
             </picture>
@@ -52,17 +41,16 @@
         <div class="card-container">
             <section class="card">
                 <h2>Learning Activities</h2>
-                <ul>
-                    <li><a href="https://ladyimpatient.github.io/wdd230/week01/chamber-site-plan">Week 01</a></li>
-                    <li><a href="#">Week 02</a></li>
-                    <li><a href="#">Week 03</a></li>
-                    <li><a href="#">Week 04</a></li>
-                    <li><a href="#">Week 05</a></li>
-                    <li><a href="#">Week 06</a></li>
-                </ul>
+                <ul id="learning-activities"></ul>
             </section>
             <section class="card">
                 <h2>Information</h2>
+                <p>Raymore, Missouri, USA</p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption id="weather-desc"></figcaption>
+                </figure>
+                <p id="current-temp"></p>
             </section>
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199018.11942707386!2d-94.61440593714461!3d38.79447125774818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0d917ed128fd7%3A0xcaca5c9d68e5a49e!2sRaymore%2C%20MO%2064083!5e0!3m2!1sen!2sus!4v1715315432507!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -73,6 +61,7 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/pageVisitCounter.js" defer></script>
-    <script src="scripts/darkMode.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/links.js" defer></script>
 </body>
 </html>
