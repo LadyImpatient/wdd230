@@ -62,29 +62,30 @@
                 </aside>
                 <div class="form-card">
                     <form id="membershipForm">
-                        <label for="first_name">Applicant's First Name:</label>
+                        <label for="first_name">Applicant's First Name:<span>*</span></label>
                         <input type="text" id="first_name" name="first_name" required>
                     
-                        <label for="last_name">Applicant's Last Name:</label>
+                        <label for="last_name">Applicant's Last Name:<span>*</span></label>
                         <input type="text" id="last_name" name="last_name" required>
 
-                        <label for="business_name">Business/Organization Name:</label>
+                        <label for="business_name">Business/Organization Name:<span>*</span></label>
                         <input type="text" id="business_name" name="business_name" required>
 
                         <label for="description">Business/Organization Description:</label>
                         <textarea id="description" name="description"></textarea>
                     
-                        <label for="position">Applicant's Position:</label>
+                        <label for="position">Applicant's Position:<span>*</span></label>
                         <input type="text" id="position" name="position" pattern="[A-Za-z -]{7,}" required>
                     
-                        <label for="email">Email Address:</label>
+                        <label for="email">Email Address:<span>*</span></label>
                         <input type="email" id="email" name="email" placeholder="example@example.com" required>
                     
-                        <label for="phone">Mobile Phone Number:</label>
+                        <label for="phone">Mobile Phone Number:<span>*</span></label>
                         <input type="tel" id="phone" name="phone" required>
                     
-                        <label for="membership_level">Membership Level:</label>
+                        <label for="membership_level">Membership Level:<span>*</span></label>
                         <select id="membership_level" name="membership_level" required>
+                            <option value="">Select Membership Level</option>
                             <option value="NP Membership">NP Membership</option>
                             <option value="Bronze Membership">Bronze Membership</option>
                             <option value="Silver Membership">Silver Membership</option>
@@ -107,7 +108,6 @@
             <p>Phone: (123) 456-7890</p>
             <p>Address: 456 Elm Street, Raymore, MO 64083</p>
             <p>Hours: Monday-Friday, 9:00 AM - 5:00 PM</p>
-            <p>Developed by Alicia 'Unga-Dinh' for WDD 230. Last modified: <span id="lastModified"></span></p>
             <p>Developed by Alicia 'Unga-Dinh' for WDD 230. Last modified: <span id="lastModified"></span></p>
         </div>
     </footer>
